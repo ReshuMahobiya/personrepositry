@@ -14,5 +14,14 @@ It has for endpoints
 
 1. /persondata/allPerson :- to get all saved persons
 2. /persondata/savePerson :- to save personinformation
-3. /persondata/{id} :- for example /persondata/8017568305(socialSecurityNumber as id)
-4. /persondata/oldestchildAge :- for getting oldest child name and Person Personal nummer
+   for saving the person we need to add for example json given below in Body perameter in the postmen 
+   {
+        "socialSecurityNumber": 8601018316,
+        "personName": "reshu",
+        "personSpouseName": "hemnat",
+        "personChildName": "ram",
+        "childAge": 10
+    }
+
+4. /persondata/{id} :- for example /persondata/8017568305(socialSecurityNumber as id)
+5. /persondata/oldestchildAge :- for getting oldest child name and Person Personal nummer
