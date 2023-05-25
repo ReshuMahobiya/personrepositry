@@ -25,14 +25,13 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 @CrossOrigin(origins="*")
 public class PersonRestController {
 	
-		@Autowired
-		private PersonService personService;
+	    	@Autowired
+	    	private PersonService personService;
 	
-	 	@GetMapping("/allPerson")
-	    public List<Person> get() {
-	         
-	 		return personService.getAllPersons();
-	    }
+	    	@GetMapping("/allPerson")
+	    	public List<Person> getAllPersons() {
+	         	return personService.getAllPersons();
+	    	}
 	 	
 	 	@PostMapping("/savePerson")
 	 	public ResponseEntity<Person> savePerson(@RequestBody Person person  ) {
